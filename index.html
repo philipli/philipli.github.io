@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="home.css">
     <noscript><link rel="stylesheet" href="home.nojs.css"></noscript>
     <script src="jquery-1.12.4.min.js"></script>
-    <script src="jquery.color-2.1.2.min.js"></script>
+    <script src="velocity-1.4.1.min.js"></script>
     <script>
       $(document).ready(function () {
         setTimeout(function () {
-          $("dd.prop").animate({color: "#000"}, 1500);
-          $("dd.value").animate({color: "#007"}, 1500);
-          $("a.value").animate({color: "blue"}, 1500);
+          $("dd.prop").velocity({color: "#000"}, 1500);
+          $("dd.value").velocity({color: "#007"}, 1500);
+          $("a.value").velocity({color: "#00f"}, 1500);
         }, 1000);
       });
     </script>
