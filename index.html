@@ -17,7 +17,6 @@
     <script>
       $(document).ready(function () {
         setTimeout(function () {
-          $("dd.prop").velocity({color: "#000"}, 1500);
           $("dd.value").velocity({color: "#007"}, 1500);
           $("a.value").velocity({color: "#00f"}, 1500);
         }, 1000);
@@ -44,23 +43,34 @@
       fbq('init', '391077021040000');
       fbq('track', 'PageView');
     </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Philip Li",
+        "worksFor": "Facebook",
+        "jobTitle": "Manager, Growth Marketing",
+        "sameAs": "https://www.linkedin.com/in/philipli"
+      }
+    </script>
   </head>
   <body>
     <div class="wrapper">
-      <p>itemscope itemtype="http://schema.org/<span class="prop">Person</span>"</p>
-      <dl itemscope itemtype="http://schema.org/Person">
-        <dt>itemprop="<span class="prop">name</span>"</dt>
-        <dd class="value" itemprop="name"><h1>Philip Li</h1></dd>
-        <dt>itemprop="<span class="prop">worksFor</span>"</dt>
-        <dd class="value" itemprop="worksFor affiliation">Facebook</dd>
-        <dt>itemprop="<span class="prop">jobTitle</span>"</dt>
-        <dd class="value" itemprop="jobTitle">
+      <p>itemscope itemtype="http://schema.org/Person"</p>
+      <dl>
+        <dt>itemprop="name"</dt>
+        <dd class="value"><h1>Philip Li</h1></dd>
+        <dt>itemprop="worksFor"</dt>
+        <dd class="value">Facebook</dd>
+        <dt>itemprop="jobTitle"</dt>
+        <dd class="value">
           <a class="value" href="https://www.youtube.com/watch?v=ZdGrC9S4PYA">Manager</a>, 
           <a class="value" href="https://www.facebook.com/careers/jobs/a0I1200000JXZdSEAX/">Growth Marketing</a>
         </dd>
-        <dt>itemprop="<span class="prop">sameAs</span>"</dt>
+        <dt>itemprop="sameAs"</dt>
         <dd class="value">
-          <a class="value" href="https://www.linkedin.com/in/philipli" itemprop="sameAs">LinkedIn</a>
+          <a class="value" href="https://www.linkedin.com/in/philipli">LinkedIn</a>
         </dd>
       </dl>
     </div>
